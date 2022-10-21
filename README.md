@@ -8,7 +8,7 @@
 
 This repository is a template for working folder throughout the course "Programming with Python (MSc Bioinformatics)" WS 2022.
 
-You will need to fork this repository into your Saarland University's GitLab account and commit all your work as you go along onto the forked repo. Failure to comply will result in you not able to participate in the exams.
+You will need to fork this repository into your GitLab account and commit all your work as you go along onto the forked repo. Failure to comply will result in you not able to participate in the exams.
 
 ## Folder structure
 
