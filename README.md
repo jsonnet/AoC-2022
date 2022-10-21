@@ -8,20 +8,18 @@
 
 This repository is a template for working folder throughout the course "Programming with Python (MSc Bioinformatics)" WS 2022.
 
-You will need to fork this repository into your GitLab account and commit all your work as you go along onto the forked repo. Failure to comply will result in you not able to participate in the exams.
+You will need to fork this repository into your GitLab account and commit all your work as you go along onto the forked repo. Failure to comply will result in you not able to participate in the exams, as we cannot check your results for plagiarism. 
+
 
 ## Folder structure
 
 ```
 programming-with-python-2022
-├── AoC_2022
-│   ├── day01.inp
-│   └── day01.py
-├── Materials
-│   ├── Slides
-│   │   └── README.md
-│   └── Tutorials
-│       └── README.md
+├── aoc
+│   ├── day01.inp
+│   └── day01.py
+├── Tutorials
+│   └── README.md
 └── README.md
 ```
 
@@ -31,7 +29,7 @@ For the ```AoC_2022``` folder, a strict naming convention must be maintaied.
 
 The python script for the ***xx***-th day should be named ```day```***xx***```.py```. For example, the solution for December 1st should be named ```day01.py```. Jupyter Notebook will not be acceptable - they need to be converted into python files before submission.
 
-For some challenges, an input file is appropriate. In such case, the input file should be a space or comma delimited file that has the same name with the script file except it has an ```.inp``` extension.
+For each challenges, an input file is provided by AoC. The input file should be a text file that has the same name with the script file except it has an ```.txt``` extension.
 
 We provided 2 empty files in this folder to demonstrate the expected naming convention.
 
