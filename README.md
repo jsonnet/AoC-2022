@@ -1,16 +1,15 @@
+---
+name: Joshua Sonnet
+mat: 2568828
+aocname: Joshua Sonnet
+aocnumber: 2229413
+---
+
 # Programming with Python template
 
 ***[Prof. Dr Sven Rahmann](rahmann@cs.uni-saarland.de)***
 
 *Tutors:* [Jens Zentgraf](zentgraf@cs.uni-saarland.de), [Vu Lam Dang](dang@cs.uni-saarland.de), [Johanna Schmitz](s8jascm2@stud.uni-saarland.de)
-
-## Personal Information
-
-***[Joshua Sonnet](s8josonn@stud.uni-saarland.de)***
-Matr. no: 2568828
-
-AoC: jsonnet
-AoC. no: #2229413
 
 ## Getting started
 
