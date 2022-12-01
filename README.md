@@ -4,6 +4,14 @@
 
 *Tutors:* [Jens Zentgraf](zentgraf@cs.uni-saarland.de), [Vu Lam Dang](dang@cs.uni-saarland.de), [Johanna Schmitz](s8jascm2@stud.uni-saarland.de)
 
+## Personal Information
+
+***[Joshua Sonnet](s8josonn@stud.uni-saarland.de)***
+Matr. no: 2568828
+
+AoC: jsonnet
+AoC. no: #2229413
+
 ## Getting started
 
 This repository is a template for working folder throughout the course "Programming with Python (MSc Bioinformatics)" WS 2022.
