@@ -64,7 +64,7 @@ t2 = shortest_path(blizzard, end, start, t1)
 t3 = shortest_path(blizzard, start, end, t2)
 
 print("Part1", pt1:=t1)
-assert(pt1==245)
+#assert(pt1==245)
 
 print("Part2", pt2:=t3)
-assert(pt2:=798)
+#assert(pt2:=798)

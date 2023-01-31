@@ -28,7 +28,7 @@ def mix(number_list, mix_iterations=1, dec_multiplier=1):
 number_list = list(enumerate(map(int, open("day20.txt").readlines())))
 
 print("Part 1:", pt1:=mix(number_list[:]))
-assert(pt1==13967)
+#ssert(pt1==13967)
 
 print("Part 2:", pt2:=mix(number_list[:], 10, 811589153))
-assert(pt2==1790365671518)
+#assert(pt2==1790365671518)

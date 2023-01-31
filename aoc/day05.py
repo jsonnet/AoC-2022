@@ -3,7 +3,9 @@ def buildCrates(lines):
 
 	for i, c in enumerate(lines[8]):
 		if c.isnumeric():
+			# build stack from bottom up (but limited to 8 high)
 			for n in range(0,8):
+				# isalpha due to non existent crates
 				if lines[n][i].isalpha():
 					if c in crates:
 						crates[c].append(lines[n][i])

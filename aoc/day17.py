@@ -28,7 +28,7 @@ def sim_rock_tetris(jets, tower=set(), cache=dict()):
         # Part 1
         if step == 2022: 
             print("Part1", top_y)
-            assert(top_y == 3071.0)
+            #assert(top_y == 3071.0)
 
         key = idx_rock, idx_jet
 
@@ -39,7 +39,7 @@ def sim_rock_tetris(jets, tower=set(), cache=dict()):
             # Part 2
             if mod == 0: 
                 print("Part2", pt2:=top_y + (top_y - c_top_y)*div)
-                assert(pt2 == 1523615160362.0)
+                #assert(pt2 == 1523615160362.0)
                 break
         else: 
             cache[key] = step, top_y

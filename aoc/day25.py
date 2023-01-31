@@ -1,4 +1,4 @@
-m# It's the last day of AoC so let us have some fun
+# It's the last day of AoC so let us have some fun
 
 # A unnecessary way to convert SNAFU to integers
 def SNAFU_to_int(sym : chr) -> int:

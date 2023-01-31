@@ -30,7 +30,7 @@ def search(time, curr='AA', vs=frozenset(Flow), elephant=False):  # valveset nee
     return max(press + press_e)
 
 print("Part 1", pt1:=search(30))
-assert(pt1==1828)
+#assert(pt1==1828)
 
 print("Part 2", pt2:=search(26, elephant=True))
-assert(pt2==2292)
+#assert(pt2==2292)

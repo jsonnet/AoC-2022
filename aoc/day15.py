@@ -147,9 +147,9 @@ sensors = parse(input)
 # pt1
 pt1 = count_excluded_positions(sensors, 2000000) 
 print("pt1: ", pt1)
-assert(pt1 == 5125700)
+#assert(pt1 == 5125700)
 
 # pt2
 pt2 = find_position(sensors, 4000000) 
 print("pt2: ", pt2)
-assert(pt2 == 11379394658764)
+#assert(pt2 == 11379394658764)

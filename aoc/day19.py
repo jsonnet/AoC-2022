@@ -65,10 +65,10 @@ def get_max_geodes(blueprint, total_time):
 
 blueprints = get_blueprints()
 print("Part1", pt1:=sum(blueprint[0] * get_max_geodes(blueprint, 24) for blueprint in blueprints))
-assert(pt1==1650)
+#assert(pt1==1650)
 
 from itertools import islice  # Take only first 3 as slice, as blueprint is a generator
 
 blueprints = get_blueprints()
 print("Part2", pt2:=math.prod([get_max_geodes(blueprint, 32) for blueprint in islice(blueprints, 3)]))
-assert(pt2==5824)
+#assert(pt2==5824)

@@ -6,7 +6,7 @@ sides = lambda x,y,z: {(x+1,y,z), (x-1,y,z), (x,y+1,z), (x,y-1,z), (x,y,z+1), (x
 
 # for cube in cubes -> check every side of cube if side is in not cube, i.e. for every not connected side add up
 print("Part1", pt1:= sum((side not in cubes) for cube in cubes for side in sides(*cube)))
-assert(pt1==4504)
+#assert(pt1==4504)
 
 max_coord = 0
 for coord in cubes:
@@ -32,4 +32,4 @@ while queue:
 
 # for cube in cubes -> check every side of cube if a path exist to an outside air side
 print("Part2", pt2:=sum((s in seen) for c in cubes for s in sides(*c)))
-assert(pt2==2556)
+#assert(pt2==2556)

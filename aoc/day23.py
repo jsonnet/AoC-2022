@@ -57,8 +57,8 @@ while True:
     # empty tiles in smallest rectangle after 10 rounds
     if iteration == 10:
         print("Part1", pt1:=(max(xs) - min(xs)+1) * (max(ys)-min(ys)+1) - len(elves))
-        assert(pt1 == 3684)
+        #assert(pt1 == 3684)
 
 # last iteration step
 print('Part2', pt2:=iteration)
-assert(pt2==862)
+#assert(pt2==862)

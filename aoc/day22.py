@@ -115,7 +115,7 @@ def follow_path(start, instructions, part2=False):
     return int(position.imag*1000 + position.real*4 + facing)
 
 print("Part1", pt1:=follow_path(start, instructions))
-assert(pt1==13566)
+#assert(pt1==13566)
 
 print("Part2", pt2:=follow_path(start, instructions, True))
-assert(pt2==11451)
+#assert(pt2==11451)

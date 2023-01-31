@@ -16,7 +16,7 @@ monkeys = { monkey: actions.split() for line in open("day21.txt").readlines()
 
 # eval to root
 print("Part1", pt1:=eval(eval_expr("root")))
-assert(pt1==66174565793494)
+#assert(pt1==66174565793494)
 
 
 ### Source for real/imag computation at https://www.reddit.com/r/adventofcode/comments/zrav4h/comment/j133ko6/ on Dec 21th 2022
@@ -28,4 +28,4 @@ c = eval(eval_expr("root") + ")")
 
 # evaluate 
 print("Part2", pt2:=round(c.real / c.imag))
-assert(pt2==3327575724809)
+#assert(pt2==3327575724809)
