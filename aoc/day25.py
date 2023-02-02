@@ -52,5 +52,5 @@ def dec_SNAFU(num : int) -> str:
 with open("day25.txt") as f:
     data = f.read().splitlines()
 
-print("Part 1", result := sum(SNAFU_dec(line) for line in data))
-print("Part 2", dec_SNAFU(result))
+print("Sum", result := sum(SNAFU_dec(line) for line in data))
+print("Part 1", dec_SNAFU(result))

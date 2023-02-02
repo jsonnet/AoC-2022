@@ -7,8 +7,9 @@ def mix(number_list, mix_iterations=1, dec_multiplier=1):
     for _ in range(mix_iterations):
         # For each position in the list
         for i in range(list_size):
+            # Find the next item
             for j in range(list_size):
-
+                # if the right next items of the list is found (each item is a tuple with the original position)
                 if number_list[j][0] == i:
                     # Save and delete value
                     num = number_list[j]

@@ -1,6 +1,3 @@
-from itertools import islice
-
-
 def readIntersection() -> str: 
 	with open('day03.txt') as f:
 		for line in f:
@@ -15,7 +12,6 @@ def task1():
 	items = [ord(i)-96 if i.islower() else ord(i) - 38 for i in readIntersection()]
 
 	print("common item prio:", sum(items))
-
 
 
 def readinThree():

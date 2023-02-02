@@ -35,9 +35,11 @@ def task2_move(lines, crates):
 with open('day05.txt') as f:
 
 	lines = f.readlines()
+
 	crates = buildCrates(lines)
+	print("Task1", pt1:="".join([crates[c][0] for c in task1_move(lines, crates)]))
+	#assert(pt1 == "JDTMRWCQJ")
 
-	# Use deepcopy to run both at the same time, as crates will only shallow copy (i.e not nested list when passed as reference)
-
-	#print("Task1", "".join([crates[c][0] for c in task1_move(lines, crates)]))
-	print("Task2", "".join([crates[c][0] for c in task2_move(lines, crates)]))
+	crates = buildCrates(lines)
+	print("Task2", pt2:="".join([crates[c][0] for c in task2_move(lines, crates)]))
+	#assert(pt2 == "VHJDDCWRD")
