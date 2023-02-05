@@ -18,24 +18,15 @@ class Sensor:
         self.x = coords.x 
         self.y = coords.y 
 
-        # estimate size of sensor area
-        tx, ty = self.x, self.y + 1
-        treshold = self.manhattan_distance(beacon.x, beacon.y) 
-        while self.manhattan_distance(tx, ty) < treshold:
-            ty += 100
-        
-        # backtrack to correct height 
-        while self.manhattan_distance(tx, ty) > treshold:
-            ty -= 1 
+        # estimate size of sensor area, i.e. sensor area "circle"
+        self.size = self.manhattan_distance(beacon.x, beacon.y) 
 
-        # size defines the sensor area "circle"
-        self.size = ty - self.y
-    
     def manhattan_distance(self, ox, oy) -> int:
         return abs(self.x - ox) + abs(self.y - oy)
 
     # if sensor covers point px,py 
     def covers(self, px, py):
+        """ Returns either False, if the sensor does not cover x,y else it returns the outer x coordinate"""
         y_diff = abs(py - self.y)
         x_size = self.size - y_diff
         # position is outside of sensor range
@@ -120,9 +111,11 @@ def find_position(sensors, lim=4000000):
     while not free_beacon_pos:
         free_beacon_pos = True
 
+        # For every sensor
         for s in sensors:
             # Jump to next x position after sensor area, if position is already covered
             next_x = s.covers(px, py)
+
             if next_x != False:
                 px = next_x + 1
 
