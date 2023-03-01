@@ -9,7 +9,7 @@ def find_marker(input_str, length) -> int:
 		marker.append(c)
 
 		# check if marker has only unique chars
-		if len(''.join(set(marker))) == length:
+		if len(set(marker)) == length:
 			print(i, ''.join(set(marker)))
 			return i
 

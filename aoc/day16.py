@@ -1,3 +1,8 @@
+# [Source] online https://www.reddit.com/r/adventofcode/comments/zn6k1l/comment/j0fti6c/?utm_source=share&utm_medium=web2x&context=3
+# on 16th Dec 2022.
+# for the use of @functools.cache in combination with the function search ..instead of a custom dict to store *args in 
+# correlation to a result and checking against in the next operation
+
 from collections import defaultdict
 import itertools, functools, re
 
@@ -15,6 +20,11 @@ for vertex, flow, tunnels in re.findall(r'Valve (\w+) has flow rate=(\d*); tunne
     for tunnel in tunnels.split(', '): 
         # store edges
         Dist[tunnel, vertex] = 1
+
+# for k in Vertices:
+#     for i in Vertices:
+#         for j in Vertices:
+#             Dist[i,j] = min(Dist[i,j], Dist[i,k] + Dist[k,j])
 
 # floyd (-warshall) algorithm to compute shortest distance between i,j
 for k, i, j in itertools.product(Vertices, repeat=3):
